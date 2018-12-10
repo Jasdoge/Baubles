@@ -1,0 +1,32 @@
+{
+  "short_name": "Baubles",
+  "name": "BLE Baubles",
+  "icons": [
+    {
+      "src": "media/logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+	},
+	{
+		"src": "media/logo_256.png",
+		"type": "image/png",
+		"sizes": "256x256"
+	  },
+	  {
+		"src": "media/logo_128.png",
+		"type": "image/png",
+		"sizes": "128x128"
+	  },
+	  {
+		"src": "media/logo_64.png",
+		"type": "image/png",
+		"sizes": "64x64"
+	  }
+  ],
+  "start_url": "/other/baubles/",
+  "background_color": "#AAFFAA",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope":"/other/baubles/",
+  "theme_color": "#339933"
+}

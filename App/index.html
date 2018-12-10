@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Baubles</title>
+	<meta name="description" content="Baubles">
+	<meta name="author" content="Jasdoge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/howler.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/SPE.min.js"></script>
+	
+	<script>var app;</script>
+	<script type="module">
+		import App from './js/App.js';
+		app = new App();
+	</script>
+	<div id="content">
+		<div id="viewer"></div>
+
+		<div id="modal"></div>
+
+		<div id="menu">
+			<div class="bg">
+				<span id="connect">Connect To Baubles</span>
+				<span id="settings">Settings</span>
+				<span id="back">Back</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

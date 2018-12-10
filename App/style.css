@@ -1,0 +1,104 @@
+body{
+	padding:0; margin:0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#content{
+	width:100%; height:100%;
+	background: linear-gradient(to bottom, #4f9168 0%,#407857 31%,#13492b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	position: fixed;
+	top:0; right:0; bottom:0; left:0;
+}
+*{
+	outline:none;
+	position: relative;
+}
+
+*.hidden{
+	display: none !important;
+}
+
+h2{
+	margin:0;
+}
+
+#menu{
+	position: fixed;
+	font-size:6vh;
+	background-color:rgba(0,100,0,0.6);
+	border:0.5vmax solid #AFA;
+	border-bottom-right-radius:1vmax;
+	border-bottom-left-radius:1vmax;
+	border-top:none;
+	color:#FFF;
+	left:50%; top:0;
+	transform:translateX(-50%);
+	cursor:pointer;
+	overflow:hidden;
+	box-shadow:0.5vmax 0.5vmax 1vmax #000;
+}
+#menu div.bg{
+	backdrop-filter: blur(10px);
+}
+#menu span{
+	padding:2vh;
+	display: inline-block;
+}
+
+
+#settings, #back{
+	display:none !important;
+}
+#content.connected #settings{
+	display:block !important;
+}
+#content.connected #connect{
+	display:none !important;
+}
+
+#content.connected.modal #back{
+	display:block !important;
+}
+#content.connected.modal #settings{
+	display:none !important;
+}
+
+
+
+#menu:active{
+	transform:translateX(-50%) scale(0.97,0.97);
+}
+
+
+#modal{
+	display:none;
+	position: fixed;
+	left:0; right:0; top:0; bottom:0;
+	background-color:rgba(255,255,255,.75);
+	backdrop-filter: blur(10px);
+	padding:5vh 5vw;
+	overflow:auto;
+	padding-top:16vh;
+}
+#content.modal #modal{
+	display:block;
+}
+label{
+	padding:1vmax;
+	background-color:rgba(255,255,255,.5);
+	margin-bottom:0.5vmax;
+	display:block;
+	box-shadow: 0.4vmax 0.4vmax 1vmax rgba(0,0,0,.25);
+}
+label.active{
+	background-color:rgba(200,255,200,.75);
+}
+
+
+div.flexTwoCol{
+	display:flex;
+	justify-content: space-between;
+}
+div.flexTwoCol > div{
+	width:49%;
+}
+
